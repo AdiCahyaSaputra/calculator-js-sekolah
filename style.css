@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;500;600;700&display=swap');
+
+:root {
+  --grey: #374151;
+  --white: white;
+  --grey-hover: #9ca3af;
+  --sky-hover: #0284c7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mukta', sans-serif;
+  background-color: var(--grey);
+}
+
+.container {
+  width: 360px;
+  margin: 0 auto;
+}
+
+.title {
+  color: var(--grey);
+  font-size: 1.3rem;
+  padding: 0.1rem 0.8rem;
+  background-color: var(--white);
+  margin: 1.2rem 0;
+  text-align: center;
+}
+
+
+
+.calcBody {
+  width: 100%;
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+#calcExpression {
+  outline: none;
+  margin-top: 3rem;
+  border: none;
+  width: 100%;
+  padding: 2rem 8px 1rem 8px;
+  font-size: 1rem;
+}
+
+.calcKeyboard {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+  margin-top: 5px;
+  width: 100%;
+  padding: 2px;
+}
+
+.btn {
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  background-color: var(--grey);
+  border: 1px solid white;
+}
+
+.btn:hover {
+  background-color: var(--grey-hover);
+}
+
+.col-6 {
+  grid-column: span 6 / span 6;
+}
+
+.col-3 {
+  grid-column: span 3 / span 3;
+}
+
+.row-1 {
+  grid-row: span 1 / span 1;
+}
+
+.row-2 {
+  grid-row: span 2 / span 2;
+}
+
+.special-char {
+  background-color: #38bdf8;
+  font-weight: bold;
+}
+
+.special-char:hover {
+  background-color: var(--sky-hover);
+}
